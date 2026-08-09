@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Luxe Cosmetics - Viabilidade Financeira & Vitrine</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-icon">✨</span>
+      <span class="logo-text">AURA <span>LUXE</span></span>
+    </div>
+    <nav>
+      <a href="#vitrine">Vitrine</a>
+      <a href="#cadeia">Cadeia de Produção</a>
+      <a href="#financeiro">Distribuição de Lucro</a>
+      <a href="#simulador">Simulador</a>
+    </nav>
+    <a href="#simulador" class="btn-primary">Ver Margens</a>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-badge">📊 Relatório de Viabilidade Financial & Brand Showcase</div>
+    <h1>O Futuro da Beleza com <span class="gradient-text">Alta Lucratividade</span></h1>
+    <p class="hero-sub">
+      Aura Luxe une formulações clean beauty premium, cadeia produtiva ágil e uma margem líquida real de <strong>47%</strong>. Uma linha completa de maquiagens criada para dominar o mercado.
+    </p>
+    <div class="hero-stats">
+      <div class="stat-card">
+        <h3>47%</h3>
+        <p>Margem Líquida Real</p>
+      </div>
+      <div class="stat-card">
+        <h3>18%</h3>
+        <p>Custo do Produto (COGS)</p>
+      </div>
+      <div class="stat-card">
+        <h3>5x</h3>
+        <p>Markup Médio</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REQUISITO 1: VITRINE DE PRODUTO & PROPOSTA DE VALOR -->
+  <section id="vitrine" class="section">
+    <div class="section-header">
+      <span class="tag">01. Nossa Linha</span>
+      <h2>Vitrine Multi-Produtos & Proposta de Valor</h2>
+      <p>Produtos de altíssima performance cobrindo todas as categorias essenciais do mercado da beleza.</p>
+    </div>
+
+    <!-- Proposta de Valor Callout -->
+    <div class="value-proposition-grid">
+      <div class="vp-card card-pink">
+        <i class="fa-solid fa-leaf vp-icon"></i>
+        <h3>Formulações Clean Beauty</h3>
+        <p>100% Cruelty-free, veganas e dermatologicamente testadas, com ativos de skincare integrados.</p>
+      </div>
+      <div class="vp-card card-purple">
+        <i class="fa-solid fa-gem vp-icon"></i>
+        <h3>Embalagens Luxe Magnet</h3>
+        <p>Design sofisticado e ergonômico com fechamento magnético e acabamento premium toque aveludado.</p>
+      </div>
+      <div class="vp-card card-coral">
+        <i class="fa-solid fa-bolt vp-icon"></i>
+        <h3>Pigmentação Ultra-Fix</h3>
+        <p>Tecnologia de micro-pigmentos importados com longa duração de até 16h sem borrar.</p>
+      </div>
+    </div>
+
+    <!-- Vitrine Grid -->
+    <div class="products-grid">
+      <!-- Batom -->
+      <div class="product-card">
+        <div class="product-badge">Batom Matte Velvet</div>
+        <div class="product-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=600&q=80" alt="Batom Matte">
+        </div>
+        <div class="product-info">
+          <div class="product-category">Lábios</div>
+          <h3>Batom Velvet Royal</h3>
+          <p>Textura aveludada com ácido hialurônico. Cor intensa sem ressecar os lábios.</p>
+          <div class="product-price-bar">
+            <div>
+              <span class="price-label">Preço de Venda</span>
+              <span class="price-value">R$ 42,00</span>
+            </div>
+            <div class="badge-margin">Margem 83%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Base -->
+      <div class="product-card">
+        <div class="product-badge">Base Skin Glow</div>
+        <div class="product-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?auto=format&fit=crop&w=600&q=80" alt="Base Líquida">
+        </div>
+        <div class="product-info">
+          <div class="product-category">Rosto</div>
+          <h3>Base Hydra Glow Serum</h3>
+          <p>Acabamento radiante, cobertura construível de média a alta com FPS 30.</p>
+          <div class="product-price-bar">
+            <div>
+              <span class="price-label">Preço de Venda</span>
+              <span class="price-value">R$ 78,00</span>
+            </div>
+            <div class="badge-margin">Margem 81%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rímel -->
+      <div class="product-card">
+        <div class="product-badge">Máscara de Cílios</div>
+        <div class="product-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1591360236480-4ed861025fa1?auto=format&fit=crop&w=600&q=80" alt="Máscara Rímel">
+        </div>
+        <div class="product-info">
+          <div class="product-category">Olhos</div>
+          <h3>Rímel Lash Extreme 4D</h3>
+          <p>Volume dramático e curvação imediata com cerdas de precisão silicone.</p>
+          <div class="product-price-bar">
+            <div>
+              <span class="price-label">Preço de Venda</span>
+              <span class="price-value">R$ 48,00</span>
+            </div>
+            <div class="badge-margin">Margem 81%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gloss -->
+      <div class="product-card">
+        <div class="product-badge">Gloss Plumping</div>
+        <div class="product-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1625093742435-6fa192b6fb10?auto=format&fit=crop&w=600&q=80" alt="Gloss Labial">
+        </div>
+        <div class="product-info">
+          <div class="product-category">Lábios</div>
+          <h3>Gloss Lip Glass Volume</h3>
+          <p>Efeito espelhado não pegajoso com micropartículas de brilho multidimensional.</p>
+          <div class="product-price-bar">
+            <div>
+              <span class="price-label">Preço de Venda</span>
+              <span class="price-value">R$ 38,00</span>
+            </div>
+            <div class="badge-margin">Margem 84%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paleta de Sombras -->
+      <div class="product-card">
+        <div class="product-badge">Paleta de Sombras</div>
+        <div class="product-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=600&q=80" alt="Paleta de Sombras">
+        </div>
+        <div class="product-info">
+          <div class="product-category">Olhos</div>
+          <h3>Paleta Sunset Luxe 12 Cores</h3>
+          <p>Sombras altamente pigmentadas em tons terrosos, metálicos e acetinados.</p>
+          <div class="product-price-bar">
+            <div>
+              <span class="price-label">Preço de Venda</span>
+              <span class="price-value">R$ 95,00</span>
+            </div>
+            <div class="badge-margin">Margem 79%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Iluminador -->
+      <div class="product-card">
+        <div class="product-badge">Iluminador Compacto</div>
+        <div class="product-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=600&q=80" alt="Iluminador">
+        </div>
+        <div class="product-info">
+          <div class="product-category">Rosto</div>
+          <h3>Highlighter Crystal Aura</h3>
+          <p>Brilho perolado ultrafino que se funde perfeitamente à pele para um glow natural.</p>
+          <div class="product-price-bar">
+            <div>
+              <span class="price-label">Preço de Venda</span>
+              <span class="price-value">R$ 55,00</span>
+            </div>
+            <div class="badge-margin">Margem 82%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REQUISITO 2: INFOGRÁFICO DE CADEIA DE PRODUÇÃO -->
+  <section id="cadeia" class="section section-dark">
+    <div class="section-header">
+      <span class="tag">02. Operação & Supply Chain</span>
+      <h2>Infográfico da Cadeia de Produção</h2>
+      <p>Estrutura escalável otimizada para manter baixos custos fabris e alto padrão de qualidade internacional.</p>
+    </div>
+
+    <div class="pipeline-container">
+      <div class="pipeline-step">
+        <div class="step-number">01</div>
+        <div class="step-icon"><i class="fa-solid fa-flask-vial"></i></div>
+        <h4>Formulação & Insumos</h4>
+        <p>Insumos limpos e pigmentos finos importados em escala. Desenvolvimento de laboratório próprio.</p>
+        <span class="step-cost">Custo: 6% da receita</span>
+      </div>
+
+      <div class="pipeline-connector"><i class="fa-solid fa-chevron-right"></i></div>
+
+      <div class="pipeline-step">
+        <div class="step-number">02</div>
+        <div class="step-icon"><i class="fa-solid fa-box-open"></i></div>
+        <h4>Packaging & Frascaria</h4>
+        <p>Moldes próprios produzidos em massa. Embalagens magnéticas com custo unitário reduzido.</p>
+        <span class="step-cost">Custo: 7% da receita</span>
+      </div>
+
+      <div class="pipeline-connector"><i class="fa-solid fa-chevron-right"></i></div>
+
+      <div class="pipeline-step">
+        <div class="step-number">03</div>
+        <div class="step-icon"><i class="fa-solid fa-industry"></i></div>
+        <h4>Envase & Anvisa</h4>
+        <p>Envase automatizado em parceiro terceirizado (OEM) com certificação ISO e aprovação ANVISA.</p>
+        <span class="step-cost">Custo: 5% da receita</span>
+      </div>
+
+      <div class="pipeline-connector"><i class="fa-solid fa-chevron-right"></i></div>
+
+      <div class="pipeline-step">
+        <div class="step-number">04</div>
+        <div class="step-icon"><i class="fa-solid fa-truck-fast"></i></div>
+        <h4>Logística & D2C</h4>
+        <p>Armazenamento em Fulfillment especializado com expedição automática B2C e B2B.</p>
+        <span class="step-cost">Frete + Picking: 6%</span>
+      </div>
+    </div>
+
+    <div class="pipeline-summary-card">
+      <div class="summary-text">
+        <h4><i class="fa-solid fa-shield-halved"></i> Eficiência de Escala Comprovada</h4>
+        <p>Ao terceirizar o envase (OEM/ODM) e manter a propriedade das fórmulas e moldes de embalagem, eliminamos o custo fixo de fábrica e reduzimos o COGS total para apenas <strong>18% do preço final</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REQUISITO 3: GRÁFICO VISUAL DE DISTRIBUIÇÃO DE LUCRO -->
+  <section id="financeiro" class="section">
+    <div class="section-header">
+      <span class="tag">03. Análise Financeira</span>
+      <h2>Distribuição de Lucro e Estrutura de Custos</h2>
+      <p>Demonstração clara de onde vai cada centavo faturado na operação da Aura Luxe.</p>
+    </div>
+
+    <div class="financial-grid">
+      <!-- Chart Column -->
+      <div class="chart-card">
+        <h3>Divisão Percentual do Faturamento</h3>
+        <div class="chart-wrapper">
+          <canvas id="profitChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Breakdown Details -->
+      <div class="breakdown-cards">
+        
+        <div class="breakdown-card card-green-border">
+          <div class="b-header">
+            <span class="b-dot bg-green"></span>
+            <h4>Margem Líquida Real</h4>
+            <span class="b-percentage text-green">47%</span>
+          </div>
+          <p>Lucro limpo que vai direto para o caixa da empresa ou reinvestimento. <br><strong>Supera o mínimo exigido de 40%!</strong></p>
+        </div>
+
+        <div class="breakdown-card card-purple-border">
+          <div class="b-header">
+            <span class="b-dot bg-purple"></span>
+            <h4>Custos Invisíveis</h4>
+            <span class="b-percentage text-purple">35%</span>
+          </div>
+          <p>Detalhamento das despesas operacionais e indiretas:</p>
+          <ul class="sub-costs">
+            <li><span>Marketing / Tráfego Pago (CAC):</span> <strong>18%</strong></li>
+            <li><span>Impostos Simples Nacional / ICMS:</span> <strong>10%</strong></li>
+            <li><span>Taxa de Gateway de Pagamento & Plataforma:</span> <strong>4%</strong></li>
+            <li><span>Avarias, Trocas e Perdas:</span> <strong>3%</strong></li>
+          </ul>
+        </div>
+
+        <div class="breakdown-card card-pink-border">
+          <div class="b-header">
+            <span class="b-dot bg-pink"></span>
+            <h4>Custo do Produto (COGS)</h4>
+            <span class="b-percentage text-pink">18%</span>
+          </div>
+          <p>Custo direto de fabricação incluindo ingredientes, envase, embalagem primária e caixas de transporte.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SIMULADOR INTERATIVO -->
+  <section id="simulador" class="section section-dark">
+    <div class="section-header">
+      <span class="tag">04. Simulador de Viabilidade</span>
+      <h2>Simule seus Lucros Operacionais</h2>
+      <p>Selecione um produto e projete o volume de vendas para calcular o faturamento e o lucro real em tempo real.</p>
+    </div>
+
+    <div class="calculator-card">
+      <div class="calc-inputs">
+        <div class="form-group">
+          <label for="prodSelect"><i class="fa-solid fa-bag-shopping"></i> Escolha o Produto:</label>
+          <select id="prodSelect" onchange="updateCalc()">
+            <option value="42,7">Batom Velvet Royal (Venda: R$ 42,00 | Custo: R$ 7,00)</option>
+            <option value="78,14">Base Hydra Glow (Venda: R$ 78,00 | Custo: R$ 14,00)</option>
+            <option value="48,9">Rímel Lash Extreme 4D (Venda: R$ 48,00 | Custo: R$ 9,00)</option>
+            <option value="38,6">Gloss Lip Glass (Venda: R$ 38,00 | Custo: R$ 6,00)</option>
+            <option value="95,19">Paleta Sunset Luxe (Venda: R$ 95,00 | Custo: R$ 19,00)</option>
+            <option value="55,10">Highlighter Crystal Aura (Venda: R$ 55,00 | Custo: R$ 10,00)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="volInput"><i class="fa-solid fa-boxes-stacked"></i> Volume de Vendas Mensal (Unidades):</label>
+          <input type="number" id="volInput" value="2500" min="100" step="100" oninput="updateCalc()">
+        </div>
+      </div>
+
+      <div class="calc-results">
+        <div class="res-card">
+          <span>Faturamento Bruto</span>
+          <h3 id="resFat">R$ 0,00</h3>
+        </div>
+        <div class="res-card">
+          <span>Custo de Produto (18%)</span>
+          <h3 id="resCogs" class="text-red">R$ 0,00</h3>
+        </div>
+        <div class="res-card">
+          <span>Custos Invisíveis (35%)</span>
+          <h3 id="resInvisible" class="text-purple">R$ 0,00</h3>
+        </div>
+        <div class="res-card highlight-res">
+          <span>Lucro Líquido Real (47%)</span>
+          <h3 id="resLucro" class="text-green">R$ 0,00</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="logo">
+        <span class="logo-icon">✨</span>
+        <span class="logo-text">AURA <span>LUXE</span></span>
+      </div>
+      <p>Projeto Acadêmico/Empresarial de Viabilidade Financeira de Linha de Maquiagens.</p>
+      <p class="copyright">© 2026 Aura Luxe Cosmetics. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Render Chart.js
+    const ctx = document.getElementById('profitChart').getContext('2d');
+    const profitChart = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: [
+          'Margem Líquida Real (47%)',
+          'Custos Invisíveis (35%)',
+          'Custo do Produto - COGS (18%)'
+        ],
+        datasets: [{
+          data: [47, 35, 18],
+          backgroundColor: [
+            '#10b981', // Verde Lucro
+            '#a855f7', // Roxo Custos Invisíveis
+            '#ff4d8d'  // Rosa COGS
+          ],
+          borderWidth: 0,
+          hoverOffset: 8
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: 'bottom',
+            labels: {
+              color: '#ffffff',
+              font: {
+                family: 'Plus Jakarta Sans',
+                size: 13
+              },
+              padding: 20
+            }
+          },
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                return ` ${context.label}: ${context.raw}% do Preço Final`;
+              }
+            }
+          }
+        },
+        cutout: '70%'
+      }
+    });
+
+    // Calculator Script
+    function updateCalc() {
+      const [price, cost] = document.getElementById('prodSelect').value.split(',').map(Number);
+      const volume = Number(document.getElementById('volInput').value) || 0;
+
+      const faturamento = price * volume;
+      const cogs = faturamento * 0.18;
+      const invisivis = faturamento * 0.35;
+      const lucroLiquido = faturamento * 0.47;
+
+      document.getElementById('resFat').innerText = faturamento.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      document.getElementById('resCogs').innerText = cogs.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      document.getElementById('resInvisible').innerText = invisivis.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      document.getElementById('resLucro').innerText = lucroLiquido.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    }
+
+    updateCalc();
+  </script>
+</body>
+</html>
