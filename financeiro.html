@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Análise Financeira - Aura Luxe</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR INTERLIGADA -->
+  <header class="navbar">
+    <a href="./index.html" class="logo" style="text-decoration: none; color: inherit;">
+      <span class="logo-icon">✨</span>
+      <span class="logo-text">AURA <span>LUXE</span></span>
+    </a>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./vitrine.html">Vitrine</a>
+      <a href="./cadeia.html">Cadeia de Produção</a>
+      <a href="./financeiro.html" class="active">Distribuição de Lucro</a>
+      <a href="./simulador.html">Simulador</a>
+    </nav>
+    <a href="./index.html" class="btn-primary"><i class="fa-solid fa-arrow-left"></i> Voltar</a>
+  </header>
+
+  <section class="section">
+    <div class="section-header">
+      <span class="tag">03. Análise Financeira</span>
+      <h2>Distribuição de Lucro e Estrutura de Custos</h2>
+      <p>Demonstração clara de onde vai cada centavo faturado na operação da Aura Luxe.</p>
+    </div>
+
+    <div class="financial-grid">
+      <div class="chart-card">
+        <h3>Divisão Percentual do Faturamento</h3>
+        <div class="chart-wrapper">
+          <canvas id="profitChart"></canvas>
+        </div>
+      </div>
+
+      <div class="breakdown-cards">
+        <div class="breakdown-card card-green-border">
+          <div class="b-header">
+            <span class="b-dot bg-green"></span>
+            <h4>Margem Líquida Real</h4>
+            <span class="b-percentage text-green">47%</span>
+          </div>
+          <p>Lucro limpo que vai direto para o caixa da empresa ou reinvestimento. <br><strong>Supera o mínimo exigido de 40%!</strong></p>
+        </div>
+
+        <div class="breakdown-card card-purple-border">
+          <div class="b-header">
+            <span class="b-dot bg-purple"></span>
+            <h4>Custos Invisíveis</h4>
+            <span class="b-percentage text-purple">35%</span>
+          </div>
+          <p>Detalhamento das despesas operacionais e indiretas:</p>
+          <ul class="sub-costs">
+            <li><span>Marketing / Tráfego Pago (CAC):</span> <strong>18%</strong></li>
+            <li><span>Impostos Simples Nacional / ICMS:</span> <strong>10%</strong></li>
+            <li><span>Taxa de Gateway de Pagamento & Plataforma:</span> <strong>4%</strong></li>
+            <li><span>Avarias, Trocas e Perdas:</span> <strong>3%</strong></li>
+          </ul>
+        </div>
+
+        <div class="breakdown-card card-pink-border">
+          <div class="b-header">
+            <span class="b-dot bg-pink"></span>
+            <h4>Custo do Produto (COGS)</h4>
+            <span class="b-percentage text-pink">18%</span>
+          </div>
+          <p>Custo direto de fabricação incluindo ingredientes, envase, embalagem primária e caixas de transporte.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="./index.html" class="btn-primary"><i class="fa-solid fa-arrow-left"></i> Voltar ao Início</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="logo">
+        <span class="logo-icon">✨</span>
+        <span class="logo-text">AURA <span>LUXE</span></span>
+      </div>
+      <p>Projeto Acadêmico/Empresarial de Viabilidade Financeira de Linha de Maquiagens.</p>
+      <p class="copyright">© 2026 Aura Luxe Cosmetics. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT CHART.JS -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      try {
+        const canvas = document.getElementById('profitChart');
+        if (canvas && typeof Chart !== 'undefined') {
+          const ctx = canvas.getContext('2d');
+          new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+              labels: [
+                'Margem Líquida Real (47%)',
+                'Custos Invisíveis (35%)',
+                'Custo do Produto - COGS (18%)'
+              ],
+              datasets: [{
+                data: [47, 35, 18],
+                backgroundColor: ['#10b981', '#a855f7', '#ff4d8d'],
+                borderWidth: 0,
+                hoverOffset: 8
+              }]
+            },
+            options: {
+              responsive: true,
+              maintainAspectRatio: false,
+              plugins: {
+                legend: {
+                  position: 'bottom',
+                  labels: {
+                    color: '#ffffff',
+                    font: { family: 'Plus Jakarta Sans', size: 13 },
+                    padding: 20
+                  }
+                }
+              },
+              cutout: '70%'
+            }
+          });
+        }
+      } catch (err) {
+        console.log("Erro ao carregar gráfico:", err);
+      }
+    });
+  </script>
+</body>
+</html>
