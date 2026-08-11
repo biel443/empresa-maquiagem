@@ -77,7 +77,8 @@ body {
   transition: color 0.3s;
 }
 
-.navbar nav a:hover {
+.navbar nav a:hover,
+.navbar nav a.active {
   color: var(--pink-primary);
 }
 
@@ -91,6 +92,7 @@ body {
   font-size: 0.9rem;
   box-shadow: 0 4px 15px rgba(255, 77, 141, 0.3);
   transition: transform 0.2s, box-shadow 0.2s;
+  display: inline-block;
 }
 
 .btn-primary:hover {
@@ -169,12 +171,6 @@ body {
 /* SECTIONS COMMON */
 .section {
   padding: 5rem 5%;
-}
-
-.section-dark {
-  background: #0a060e;
-  border-top: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
 }
 
 .section-header {
